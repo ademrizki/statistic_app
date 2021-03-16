@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#5b391f">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="320dp"
+        android:layout_height="230dp"
+        android:layout_gravity="center">
+
+<ScrollView
+    android:id="@+id/scrolling"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e7d17b"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/textNomor"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:textSize="25sp"/>
+        <TextView
+            android:id="@+id/textData"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+    </ScrollView>
+    </android.support.v7.widget.CardView>
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+           <EditText
+               android:id="@+id/editText1"
+               android:layout_width="300dp"
+               android:layout_height="33dp"
+               android:layout_weight="1"
+               android:ems="10"
+               android:inputType="numberDecimal"
+               android:background="#ffff">
+           <requestFocus/>
+           </EditText>
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.16"
+                android:onClick="add"
+                android:text="OK" />
+
+    </LinearLayout>
+
+<android.support.v7.widget.CardView
+    android:layout_width="327dp"
+    android:layout_height="230dp"
+    android:layout_gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+    <ScrollView
+        android:id="@+id/scrolling"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#e7d17b">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textMean"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textSize="30sp" />
+
+     <TextView
+        android:id="@+id/textMedian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:textSize="30sp" />
+    <TextView
+        android:id="@+id/textVarians"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:textSize="30sp" />
+    <TextView
+        android:id="@+id/textDeviation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:textSize="30sp" />
+    <TextView
+        android:id="@+id/textSkewness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/textKurtosis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:textSize="25sp" />
+</LinearLayout>
+</ScrollView>
+</LinearLayout>
+</android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="descriptive"
+        android:text="Deskriptif" />
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clear"
+        android:text="Clear" />
+    </LinearLayout>
+
+
